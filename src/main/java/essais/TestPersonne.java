@@ -9,10 +9,10 @@ public class TestPersonne {
 		
 		AdressePostale aP = new AdressePostale(14,"Rue Andre Portes",34200,"Sete") ;
 		
-		Personne p1 = new Personne("NGUYEN","Darcy",aP);
+		Personne p1 = new Personne("NGUYEN","Darcy");
 	
 	
-		
+		p1.modifAdresse(aP);
 		
 
 	
