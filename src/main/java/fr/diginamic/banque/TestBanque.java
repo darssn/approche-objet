@@ -10,12 +10,20 @@ public class TestBanque {
 		
 		Compte[] tab = new Compte[2];
 		
-		
-		
-		
 		Compte c = new Compte(1,10);
 		CompteTaux ct = new CompteTaux(2,10,1.1);
 		
+		Credit cr1 = new Credit("22 mars 1587",1000);
+		Debit deb1 = new Debit("22 mars 1587",1000);
+		
+		
+		c.ajouterOperation(cr1);
+		c.ajouterOperation(deb1);
+		
+		
+		
+		//System.out.println(c.getSolde());
+		System.out.println(c.getSolde("Debit"));
 		
 		tab[0]= c;
 		tab[1] = ct;
@@ -24,7 +32,7 @@ public class TestBanque {
 		for(int i = 0 ;i<tab.length;i++){
 			
 			
-			System.out.println(tab[i]);
+		//	System.out.println(tab[i]);
 			
 			
 			totalSolde += tab[i].calculSolde(); 
@@ -33,7 +41,7 @@ public class TestBanque {
 			
 		}
 		
-		System.out.println(totalSolde);
+	//	System.out.println(totalSolde);
 		
 	
 
