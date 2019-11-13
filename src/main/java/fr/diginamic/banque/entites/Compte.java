@@ -4,10 +4,10 @@ public class Compte {
 
 	
 	int num ;
-	int solde;
+	double solde;
 	
 	
-	public Compte(int num , int solde){
+	public Compte(int num , double solde){
 		
 		this.num = num;
 		this.solde = solde;
@@ -18,10 +18,13 @@ public class Compte {
 	public String toString(){
 		
 		return "Compte : "+this.num+" Solde : "+this.solde;
+	
+	}
+	
+	public double calculSolde(){
 		
 		
-		
-		
+		return this.solde;
 	}
 	
 	
