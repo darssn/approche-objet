@@ -17,5 +17,14 @@ abstract class Operation {
 		 
 		 return this.montant;
 	 }
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	public void setMontant(double montant) {
+		this.montant = montant;
+	}
 
 }

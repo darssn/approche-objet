@@ -29,4 +29,8 @@ public class CompteTaux extends Compte {
 		
 	}
 
+	public void setTaux(double taux) {
+		this.taux = taux;
+	}
+
 }

@@ -12,12 +12,33 @@ public class Compte {
 		this.soldeInitial = solde;
 
 	}
+	public double getSoldeInitial() {
+		return soldeInitial;
+	}
+
+	public void setSoldeInitial(double soldeInitial) {
+		this.soldeInitial = soldeInitial;
+	}
+
+	public Operation[] getTabOp() {
+		return tabOp;
+	}
+
+	public void setTabOp(Operation[] tabOp) {
+		this.tabOp = tabOp;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
 
 	public String toString() {
 
 		return "Compte : " + this.num + " Solde : " + this.soldeInitial +" Nombre d'opérations : "+this.tabOp.length;
 
 	}
+
 
 	public double calculSolde() {
 
@@ -88,5 +109,6 @@ public class Compte {
 		return solde;
 
 	}
+
 
 }
