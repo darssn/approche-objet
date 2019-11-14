@@ -1,6 +1,6 @@
-package fr.diginamic.banque;
+package essais;
 
-import fr.diginamic.banque.entites.*;
+import entites.*;
 
 public class TestObjetGeometrique {
 

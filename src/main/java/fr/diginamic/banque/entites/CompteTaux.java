@@ -28,9 +28,16 @@ public class CompteTaux extends Compte {
 		return ( super.calculSolde()+(super.calculSolde() * taux) / 100) ;
 		
 	}
+	
+	public String getType(){
+		
+		return "Taux";
+	}
 
 	public void setTaux(double taux) {
 		this.taux = taux;
 	}
+	
+	
 
 }

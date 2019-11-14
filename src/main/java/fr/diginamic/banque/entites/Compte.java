@@ -5,6 +5,7 @@ public class Compte {
 	private int num;
 	private double soldeInitial;
 	private Operation[] tabOp = new Operation[0];
+	private double taux = 0;
 
 	public Compte(int num, double solde) {
 
@@ -23,6 +24,11 @@ public class Compte {
 	public Operation[] getTabOp() {
 		return tabOp;
 	}
+	
+	public int tailleTab(){
+		
+		return tabOp.length;
+	}
 
 	public void setTabOp(Operation[] tabOp) {
 		this.tabOp = tabOp;
@@ -37,6 +43,11 @@ public class Compte {
 
 		return "Compte : " + this.num + " Solde : " + this.soldeInitial +" Nombre d'opérations : "+this.tabOp.length;
 
+	}
+	
+	public String getType(){
+		
+		return "Compte";
 	}
 
 
@@ -108,6 +119,15 @@ public class Compte {
 		
 		return solde;
 
+	}
+	public int getNum() {
+		return num;
+	}
+	public double getTaux() {
+		return taux;
+	}
+	public void setTaux(double taux) {
+		this.taux = taux;
 	}
 
 
