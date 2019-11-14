@@ -23,7 +23,7 @@ public class TestBanque {
 		do {
 
 			System.out.println(
-					"***** Administration des comptes ***** \n1. Lister les comptes\n2. Ajouter un nouveau compte\n3. Ajouter une opération à un compte\n4. Supprimer un compte\n99. Sortir");
+					"\n***** Administration des comptes ***** \n\n1. Lister les comptes\n2. Ajouter un nouveau compte\n3. Ajouter une opération à un compte\n4. Supprimer un compte\n99. Sortir");
 
 			choix = Integer.parseInt(sc.nextLine());
 
@@ -73,7 +73,7 @@ public class TestBanque {
 
 				case 1:
 
-					System.out.println(Integer.parseInt(num) + "    " + soldeInit);
+				
 
 					Compte nc1 = new Compte(Integer.parseInt(num), soldeInit);
 					c.sauvegarder(nc1);

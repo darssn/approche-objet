@@ -88,7 +88,12 @@ public class Compte {
 
 		for (int i = 0; i < this.tabOp.length; i++) {
 
+			if(this.tabOp[i].getType()=="Credit"){
 			totalMontant += this.tabOp[i].getMontant();
+			}else{
+				
+			totalMontant -= this.tabOp[i].getMontant();
+			}
 
 		}
 

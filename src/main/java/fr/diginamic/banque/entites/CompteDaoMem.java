@@ -57,6 +57,7 @@ public class CompteDaoMem implements CompteDao {
 				}
 				int pos = 0;
 				for (int k = 0; k < this.tabCompte.length; k++) {
+					//System.out.println(tabCompteTemp.length+"         "+tabCompte2.length);
 
 					switch (pos) {
 
@@ -65,8 +66,12 @@ public class CompteDaoMem implements CompteDao {
 
 						break;
 					case 1:
+						if(tabCompteTemp.length > 1){
 						tabCompte2[k - 1] = tabCompteTemp[k];
-
+						}else{
+							tabCompte2[k - 1] = tabCompteTemp[k];
+							k =this.tabCompte.length;
+						}
 						break;
 
 					default:
@@ -80,6 +85,7 @@ public class CompteDaoMem implements CompteDao {
 
 				}
 				this.tabCompte = tabCompte2;
+				//System.out.println(this.tabCompte.length+"         "+tabCompte2.length);
 				ok = true;
 
 			}
