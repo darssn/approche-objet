@@ -2,8 +2,8 @@ package fr.diginamic.banque.entites;
 
 abstract class Operation {
 	
-	String date;
-	double montant;
+	private String date;
+	private double montant;
 	
 	Operation(String date,double montant){
 		
@@ -12,5 +12,10 @@ abstract class Operation {
 		
 	}
 	 abstract String getType();
+	 
+	 public double getMontant(){
+		 
+		 return this.montant;
+	 }
 
 }

@@ -2,9 +2,9 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-	int num;
-	double soldeInitial;
-	Operation[] tabOp = new Operation[0];
+	private int num;
+	private double soldeInitial;
+	private Operation[] tabOp = new Operation[0];
 
 	public Compte(int num, double solde) {
 
@@ -56,7 +56,7 @@ public class Compte {
 
 		for (int i = 0; i < this.tabOp.length; i++) {
 
-			totalMontant += this.tabOp[i].montant;
+			totalMontant += this.tabOp[i].getMontant();
 
 		}
 
@@ -74,12 +74,12 @@ public class Compte {
 
 			if (tabOp[i].getType() == "Credit" && type == "Credit") {
 					
-				solde += tabOp[i].montant;
+				solde += tabOp[i].getMontant();
 			}
 
 			if (tabOp[i].getType() == "Debit" && type=="Debit") {
 
-				solde += tabOp[i].montant;
+				solde += tabOp[i].getMontant();
 				
 			}
 
