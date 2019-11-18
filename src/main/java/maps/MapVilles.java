@@ -2,7 +2,7 @@ package maps;
 
 import java.util.*;
 
-public class mapVilles {
+public class MapVilles {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

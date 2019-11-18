@@ -44,8 +44,6 @@ public class MapPays {
 		
 		
 		
-		
-
 
 		i = map1.keySet().iterator();
 		

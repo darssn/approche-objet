@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Pays {
+public class Pays{
 
 	private String nom;
 	private int nbHab;
@@ -126,5 +126,8 @@ public class Pays {
 		
 		
 	}
+
+		
+	
 
 }
