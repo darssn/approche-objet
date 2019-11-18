@@ -40,11 +40,7 @@ public class Pays {
 	public void setPIB(double pIB) {
 		pib = pIB;
 	}
-	
-	public String toString(){
-		
-		return this.getNom();
-	}
+
 
 	public static void main(String[] args) {
 
