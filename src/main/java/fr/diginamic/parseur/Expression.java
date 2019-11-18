@@ -17,11 +17,7 @@ public class Expression {
 	public double evaluer(String var, double valeur) {
 
 		double resultat = 0;
-		String temp;
-		
-		
 	
-		
 		
 		if (this.membreG.equals(var)) {
 

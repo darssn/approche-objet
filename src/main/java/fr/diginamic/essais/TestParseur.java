@@ -6,7 +6,7 @@ public class TestParseur {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String chaine="9/x";
+		String chaine="x+3";
 				
 		Expression expr = Parser.parse(chaine);
 		
