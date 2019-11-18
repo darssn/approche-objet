@@ -21,13 +21,13 @@ public class TestListeInt {
 		System.out.println(listeInt);
 		System.out.println("La taille de la liste est : " + listeInt.size());
 
-		Iterator<Integer> inter = listeInt.iterator();
+		Iterator<Integer> iter = listeInt.iterator();
 
 		int max = listeInt.get(0);
 
-		while (inter.hasNext()) {
+		while (iter.hasNext()) {
 
-			int a = inter.next();
+			int a = iter.next();
 
 			if (max < a) {
 
