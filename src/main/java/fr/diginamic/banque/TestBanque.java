@@ -6,6 +6,15 @@ import java.util.Scanner;
 public class TestBanque {
 
 	public static void main(String[] args) {
+		
+		Compte cc1 = new Compte(1,10);
+		Compte cc2 = new Compte(1,10);
+		Compte cc3= cc2;
+		
+		System.out.println(cc1.equals(cc2));	// return false
+		
+		System.out.println(cc2.equals(cc3)); // return true
+		
 
 		int choix = 0;
 		Scanner sc = new Scanner(System.in);

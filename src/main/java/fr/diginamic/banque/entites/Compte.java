@@ -1,4 +1,5 @@
 package fr.diginamic.banque.entites;
+import org.apache.commons.lang3.builder.EqualsBuilder;
 
 public class Compte {
 
@@ -36,6 +37,16 @@ public class Compte {
 
 	public void setNum(int num) {
 		this.num = num;
+	}
+	
+	public boolean equals(Compte c){
+		
+		if(!(c instanceof Compte)){
+			
+			return false;
+		
+		}
+		return new EqualsBuilder().append(c,this).isEquals();	
 	}
 
 
