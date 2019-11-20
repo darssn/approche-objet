@@ -41,12 +41,8 @@ public class Compte {
 	
 	public boolean equals(Compte c){
 		
-		if(!(c instanceof Compte)){
-			
-			return false;
-		
-		}
 		return new EqualsBuilder().append(c,this).isEquals();	
+		
 	}
 
 
