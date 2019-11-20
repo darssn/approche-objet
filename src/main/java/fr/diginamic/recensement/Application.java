@@ -23,7 +23,7 @@ public class Application {
 
 		try {
 			File file = new File("C:/temp/recensement population 2016.csv");
-			List<String> lignes = FileUtils.readLines(file, "UTF-8");
+			List<String> lignes = FileUtils.readLines(file,"UTF-8");
 
 			for (int i = 1; i < lignes.size(); i++) {
 
