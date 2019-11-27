@@ -10,7 +10,7 @@ public class Maison {
 	public void ajouterPiece(Piece p) throws Exception {
 
 		if (p != null && p.getEtage() >= 0 && p.getSuperficie() > 0) {
-			
+
 			Piece[] tab = new Piece[this.tabPiece.length + 1];
 
 			if (this.tabPiece.length != 0) {
@@ -28,11 +28,11 @@ public class Maison {
 				tab[0] = p;
 
 			}
-			
+
 			this.tabPiece = tab;
 
 		} else {
-			
+
 			throw new Exception("Erreur");
 		}
 
@@ -59,7 +59,7 @@ public class Maison {
 
 		double total = 0;
 
-		if (this.tabPiece != null) {
+		if (this.tabPiece != null){
 
 			for (int i = 0; i < this.tabPiece.length; i++) {
 
@@ -79,35 +79,37 @@ public class Maison {
 
 		double superficie = 0;
 
+		if (type != null) {
+			type = type.trim();
 
 			for (int i = 0; i < this.tabPiece.length; i++) {
 
-				if(this.tabPiece[i].getType().equals(type.toLowerCase()))
+				if (this.tabPiece[i].getType().equals(type.toLowerCase()))
 
-				superficie += this.tabPiece[i].getSuperficie();
-				
-				
+					superficie += this.tabPiece[i].getSuperficie();
+
 			}
-
-		
+		}
 
 		return superficie;
 
 	}
-	
-	public int nbType(String type) {
 
+	public int nbType(String type) {
 
 		int nbtype = 0;
 
+		if (type != null) {
+			type = type.trim();
 
 			for (int i = 0; i < this.tabPiece.length; i++) {
 
-				if(this.tabPiece[i].getType().equals(type.toLowerCase()))
+				if (this.tabPiece[i].getType().equals(type.toLowerCase()))
 
-				nbtype++;
-								
+					nbtype++;
+
 			}
+		}
 
 		return nbtype;
 
