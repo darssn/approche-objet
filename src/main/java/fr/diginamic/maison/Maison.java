@@ -7,7 +7,7 @@ public class Maison {
 	public Maison() {
 	}
 
-	public void ajouterPiece(Piece p) {
+	public void ajouterPiece(Piece p) throws Exception {
 
 		if (p != null && p.getEtage() >= 0 && p.getSuperficie() > 0) {
 			
@@ -32,8 +32,8 @@ public class Maison {
 			this.tabPiece = tab;
 
 		} else {
-
-			System.out.println("Erreur");
+			
+			throw new Exception("Erreur");
 		}
 
 	}
@@ -82,7 +82,7 @@ public class Maison {
 
 			for (int i = 0; i < this.tabPiece.length; i++) {
 
-				if(this.tabPiece[i].getType() == type.toLowerCase())
+				if(this.tabPiece[i].getType().equals(type.toLowerCase()))
 
 				superficie += this.tabPiece[i].getSuperficie();
 				
@@ -97,12 +97,13 @@ public class Maison {
 	
 	public int nbType(String type) {
 
+
 		int nbtype = 0;
 
 
 			for (int i = 0; i < this.tabPiece.length; i++) {
 
-				if(this.tabPiece[i].getType() == type.toLowerCase())
+				if(this.tabPiece[i].getType().equals(type.toLowerCase()))
 
 				nbtype++;
 								

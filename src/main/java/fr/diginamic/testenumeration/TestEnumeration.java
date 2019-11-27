@@ -12,13 +12,8 @@ public class TestEnumeration {
 
 		String nom = "ETE";
 
-		for (Saison a : Saison.values()) {
-
-			if (a.getNom().equalsIgnoreCase(nom)) {
-				System.out.println(a.getOrdre() + "     "+a.getNom());
-			}
-
-		}
+		Saison s = Saison.valueOf(nom);
+		
 		
 		String libelle = "hiver";
 		

@@ -3,7 +3,7 @@ import fr.diginamic.maison.*;
 
 public class TestMaison {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
 		Maison m = new Maison();

@@ -37,17 +37,15 @@ public enum Saison {
 	
 	public static Saison retourne(String libelle){
 		
-		
-		Saison a = null;
-		
+				
 		for(Saison b : Saison.values()){
 			
 			if (b.getNom().equalsIgnoreCase(libelle)){
-				a = b;
+				return b;
 			}
 		}
 		
-		return a ;
+		return null ;
 	
 		
 		
